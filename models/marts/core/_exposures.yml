@@ -1,0 +1,17 @@
+version: 2
+
+exposures:
+
+  - name: sample_tpch_dashboard
+    type: dashboard
+    maturity: low
+    url: https://prod-useast-a.online.tableau.com/#/site/personalsandbox/views/ExampleTPCHDashboard/ShipmentsOverTime?:iid=1 
+    description: >
+        Tracking TPCH customers and shipping by air
+    owner:
+      name: Jeremy from Training
+      email: jeremy@jaffleshop.com
+    depends_on:
+      - ref('dim_customers')
+      - ref('agg_ship_modes_dynamic_pivot')
+    
