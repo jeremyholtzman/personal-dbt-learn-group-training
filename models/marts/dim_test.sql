@@ -1,1 +1,1 @@
-select *, 'asdfasdfasdf' as b from {{ ref('stg_test') }}
+select *, 'asdfasdfasdf' as b, '!!asdfasdfasdf' as c from {{ ref('stg_test') }}
