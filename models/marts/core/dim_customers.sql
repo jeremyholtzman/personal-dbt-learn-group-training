@@ -38,7 +38,7 @@ final as (
             on nation.region_id = region.region_id
 )
 select 
-    *
+    *, a as test
 from
     final
 order by
