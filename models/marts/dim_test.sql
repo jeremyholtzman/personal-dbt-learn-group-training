@@ -1,0 +1,1 @@
+select *, 'asdfasdfasdf' as b from {{ ref('stg_test') }}

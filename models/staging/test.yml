@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: test
+    database: analytics
+    schema: dbt_jholtzman
+    tables:
+      - name: test_source
+        loaded_at_field: _loaded_at
