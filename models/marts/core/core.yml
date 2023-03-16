@@ -13,7 +13,7 @@ models:
         description: region name
         tests:
           - accepted_values:
-              values: ['AFRICA','MIDDLE EAST','ASIA','EUROPE','AMERICA']
+              values: ['AFRICA','MIDDLE EAST','ASIA']
               severity: warn
       - name: name
         description: customer id
@@ -27,6 +27,7 @@ models:
         description: '{{ doc("account_balance") }}'
       - name: market_segment
         description: market segment of the customer
+        
 
 
   - name: dim_parts

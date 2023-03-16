@@ -4,6 +4,7 @@ sources:
   - name: test
     database: analytics
     schema: dbt_jholtzman
+    description: "{{ env_var('DBT_TEST') }}"
     tables:
       - name: test_source
         loaded_at_field: _loaded_at

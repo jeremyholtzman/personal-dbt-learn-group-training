@@ -1,6 +1,9 @@
 {{
     config(
-        transient = false
+        transient = false,
+        post_hook = [
+            "show schemas"
+        ]
     )
 }}
 
