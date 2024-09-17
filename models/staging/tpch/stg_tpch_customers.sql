@@ -1,3 +1,10 @@
+{{
+    config(
+        tags=['test'],
+        schema='suffix'
+    )
+}}
+
 with source as (
 
     select * from {{ source('tpch', 'customer') }}

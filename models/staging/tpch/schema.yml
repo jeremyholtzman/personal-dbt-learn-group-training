@@ -9,6 +9,7 @@ models:
         tests:
           - unique
           - not_null
+        quote: false
       - name: name
         description: customer id
       - name: address
